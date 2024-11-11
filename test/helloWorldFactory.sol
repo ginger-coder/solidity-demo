@@ -3,6 +3,7 @@ pragma solidity ^0.8.20;
 
 import { MyContract } from './test.sol';
 
+// 工厂模式
 contract HelloWorldFactory {
 
     MyContract hw;
