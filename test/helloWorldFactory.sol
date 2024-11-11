@@ -18,4 +18,12 @@ contract HelloWorldFactory {
         return hws[_index];
     }
 
+    function callSayHelloWorldFromFactory(uint256 _index, uint _id) public view returns (string memory) {
+        return hws[_index].sayHello(_id);
+    }
+
+    function callSetHelloWorldFromFactory(uint256 _index, string memory newStr, uint256 _id) public {
+        hws[_index].setHello(newStr, _id);
+    }
+
 }
